@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EduSite - Learn Anywhere</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background: #f4f4f4;
+    }
+
+    header {
+      background: #004080;
+      color: #fff;
+      padding: 20px 0;
+    }
+
+    .container {
+      width: 90%;
+      margin: auto;
+      overflow: hidden;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hero {
+      background: url('https://source.unsplash.com/1600x600/?education,school') no-repeat center center/cover;
+      color: white;
+      padding: 80px 0;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+    }
+
+    .hero p {
+      font-size: 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background: #ffa500;
+      color: white;
+      text-decoration: none;
+      margin-top: 20px;
+      border-radius: 5px;
+    }
+
+    section {
+      padding: 40px 0;
+      background: white;
+    }
+
+    .features {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    .feature-box {
+      width: 30%;
+      min-width: 250px;
+      background: #f9f9f9;
+      margin: 15px;
+      padding: 20px;
+      text-align: center;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    footer {
+      background: #004080;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    @media (max-width: 768px) {
+      .features {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .feature-box {
+        width: 80%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <h1>EduSite</h1>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#courses">Courses</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="hero">
+    <div class="container">
+      <h1>Learn Anytime, Anywhere</h1>
+      <p>Join thousands of learners and explore world-class education online.</p>
+      <a href="#courses" class="btn">Get Started</a>
+    </div>
+  </div>
+
+  <section id="courses" class="container">
+    <h2 style="text-align: center;">Popular Courses</h2>
+    <div class="features">
+      <div class="feature-box">
+        <h3>Web Development</h3>
+        <p>Build websites and apps using HTML, CSS, JavaScript & more.</p>
+      </div>
+      <div class="feature-box">
+        <h3>Data Science</h3>
+        <p>Master Python, statistics, and machine learning.</p>
+      </div>
+      <div class="feature-box">
+        <h3>Graphic Design</h3>
+        <p>Learn to design logos, websites, and more with pro tools.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="container">
+    <h2 style="text-align: center;">Why EduSite?</h2>
+    <div class="features">
+      <div class="feature-box">
+        <h3>Expert Instructors</h3>
+        <p>Learn from industry professionals and experienced educators.</p>
+      </div>
+      <div class="feature-box">
+        <h3>Flexible Learning</h3>
+        <p>Study at your own pace, anytime from any device.</p>
+      </div>
+      <div class="feature-box">
+        <h3>Certificates</h3>
+        <p>Earn certificates to showcase your skills and achievements.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="container">
+    <h2 style="text-align: center;">Get in Touch</h2>
+    <p style="text-align: center;">Email us at <a href="mailto:support@edusite.com">support@edusite.com</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 EduSite. All rights reserved.</p>
+  </footer>
+</body>
+</html>

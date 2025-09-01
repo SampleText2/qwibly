@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f0f9ff;
+}
+
+.tree-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+
+.tree-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  opacity: 0.85;
+}
+
+/* Unit box */
+.unit {
+  position: absolute;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 12px;
+  padding: 0.6rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Unit title */
+.unit-title {
+  font-weight: bold;
+  color: #2e86de;
+  margin-bottom: 0.5rem;
+}
+
+/* Lesson buttons */
+.lesson-btn {
+  display: block;
+  margin: 0.3rem auto;
+  padding: 0.4rem 0.8rem;
+  background-color: #2e86de;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.lesson-btn:hover {
+  background-color: #1b5fb0;
+}
