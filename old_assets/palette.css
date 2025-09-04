@@ -1,0 +1,29 @@
+:root {
+  /* Base Indigo Palette */
+  --indigo-base: #1B145E;
+  --indigo-dark: #120F45;
+  --indigo-mid: #2A2180;
+  --indigo-soft: #3F3AA3;
+  --indigo-muted: #8783D1;
+  --indigo-light: #E4E3F8;
+
+  /* Text Colors */
+  --text-light: #F5F5FF;
+  --text-dark: #1B145E;
+  --text-muted: #8783D1;
+
+  /* Accent Colors */
+  --accent-cyan: #00FFD1;
+  --accent-cyan-hover: #00E6BD;
+  --accent-amber: #FEC84E;
+  --accent-pink: #FF5470;
+  --accent-sky: #38BDF8;
+
+  /* Button: Clean Neutral */
+  --btn-clean: #F5F5FF;
+  --btn-clean-hover: #E0E0F0;
+
+  /* Backgrounds */
+  --bg-dark: #1B145E;
+  --bg-light: #F5F5FF;
+}

@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  color: #000000;
+  background-color:#1B145E;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Layout Containers */
+.container {
+  width: 1%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* Navigation */
+header {
+  background: #1B145E;
+  color: white;
+  padding: 1rem 0;
+}
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+}
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+/* Email + SM */
+
+
+
+.email-sect {
+  background: linear-gradient(to bottom, #1B145E, #245BA8);
+  color: #fff;
+  text-align: center;
+  padding: 4rem 1rem;
+}
+
+.email-sect h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.email-sect p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.feedback-sect {
+  background: linear-gradient(to bottom, #245BA8, #8FB1CC);
+  color: #fff;
+  text-align: center;
+  padding: 2.4rem 1rem;
+}
+.feedback-sect h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.feedback-sect h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  
+}
+
+.feedback-sect button {
+    font-size: 1.2rem;
+  margin: 1rem 0;
+  padding: .2% 1%;
+  /*border-radius: 10px;*/
+  transition: background 0.3s ease;
+  background: #1b145e;
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 0.7rem;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.feedback-sect button:hover {
+letter-spacing: 2px;
+  box-shadow: none;
+  transition: .3s;
+}
+
+textarea {
+  resize: none;
+  background: rgba(255, 255, 255, 0.5);
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 8px 6px -6px #555;
+  max-width: 500px;
+}
+
+textarea::-webkit-scrollbar {
+  width: 0;
+}
+textarea:focus {
+  background: white;
+  box-shadow: none;
+}
+
+form {
+  width: 100%;
+  display: block;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+form textarea {
+  width: 60%;
+}
+
+label, input, textarea {
+  padding: 8px;
+}
+
+label {
+    font-weight: bold;
+    padding-bottom: 100px;
+}
+
+[placeholder] {
+  color: #555;
+}
+
+label i {
+  margin: 0 10px 0 0;
+}
+
+.field:focus-within label {
+  color: #000;
+  letter-spacing: 2px;
+}
+
+
+
+/*
+.feedback-sect label {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+.feedback-sect input {
+  padding: 6px 12px;
+                    background: rgb(31, 32, 35);
+                    border: 1px solid rgb(60, 63, 68);
+                    border-radius: 4px;
+                    font-size: 13px;
+                    color: rgb(247, 248, 248);
+                    appearance: none;
+                    transition: border 0.15s ease 0s;
+                    
+}
+.feedback-input:focus{
+                        outline: none;
+                        box-shadow: none;
+                        border-color: rgb(100, 153, 255);
+                    }
+                
+
+.feedback-input {
+    height: 100px;
+    width: 80%;
+}
+
+.info-input {
+    height: 40px;
+    width: 60%;
+}
+*/

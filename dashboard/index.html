@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard - BrightLearn</title>
+  <link rel="stylesheet" href="dashboard.css"/>
+</head>
+<body>
+  <div class="dashboard-container">
+    <h2>Welcome to BrightLearn!</h2>
+    <p id="user-info">Loading user info...</p>
+    <button id="logout-btn">Log Out</button>
+  </div>
+  <div class="edit-profile">
+  <h3>Edit Profile</h3>
+  <input type="text" id="name" placeholder="Your Name" />
+  <input type="text" id="grade" placeholder="Your Grade" />
+  <button id="save-profile">Save</button>
+</div>
+
+  <!-- Firebase SDK (Modules) -->
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-app.js";
+    import { getAuth, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-auth.js";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyAYpaRHLoqFis2d87ceLSAEERx3OOYMSCk",
+      authDomain: "qwibly-85f67.firebaseapp.com",
+      projectId: "qwibly-85f67",
+      storageBucket: "qwibly-85f67.appspot.com",
+      messagingSenderId: "119685972717",
+      appId: "1:119685972717:web:a32124110eef5f59e542e4",
+      measurementId: "G-3MKKN2FQJZ"
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth(app);
+
+    // Check if user is logged in
+    onAuthStateChanged(auth, (user) => {
+      if (user) {
+        document.getElementById("user-info").textContent = `Logged in as: ${user.email}`;
+      } else {
+        // Not logged in → redirect
+        window.location.href = "login.html";
+      }
+    });
+
+    // Log out
+    document.getElementById("logout-btn").addEventListener("click", () => {
+      signOut(auth)
+        .then(() => {
+          alert("You have been logged out.");
+          window.location.href = "login.html";
+        })
+        .catch((error) => {
+          alert("Error logging out: " + error.message);
+        });
+    });
+  </script>
+</body>
+</html>

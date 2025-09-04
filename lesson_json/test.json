@@ -5,17 +5,31 @@
       "type": "multiple-choice",
       "question": "Biology of the scientific study of _____",
       "options": ["Life", "Plants", "Matter", "Humans"],
-      "answer": "Life"
+      "answer": "Life",
+      "image": null,
+      "explanation": "Biology is the study of forms of life and the interactions between life forms."
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Which of the following is NOT an example of a living organism?",
+      "options": ["Oak tree", "Human", "Rotavirus", "Mold"],
+      "answer": "Rotavirus",
+      "image": null,
+      "explanation": "Viruses are not considered living, because they are not made of cells."
     },
     {
       "type": "true-false",
-      "question": "The nucleus controls most cell activities.",
-      "answer": true
+      "question": "All organisms have DNA.",
+      "answer": true,
+      "image": null,
+      "explanation": "All organism contain some form of DNA."
     },
     {
       "type": "short-answer",
-      "question": "Name the fluid inside the cell that surrounds organelles.",
-      "answer": "Cytoplasm"
+      "question": "_____ are the basic units of life.",
+      "answer": "Cells",
+      "image": null,
+      "explanation" : "Cells are the building blocks of life; all life contains at least one cell."
     }
   ]
 }
